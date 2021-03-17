@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "MadeTommy";
+    src: url("../fonts/made-tommy-regular.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "MadeTommy";
+    src: url("../fonts/made-tommy-medium.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "MadeTommy";
+    src: url("../fonts/made-tommy-light.otf");
+    font-weight: lighter;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, a, p
+{
+    color: #C4CECF;
+    font-size: lighter;
+    font-family: "MadeTommy";
+}
+
+h1 {
+    font-size: 93px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 34px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 16px 28px;
+    border-radius: 40px;
+    font-weight: bold;
+}
+
+.btn.primary {
+    background-color: #C6403F;
+    border: none;
+}
+
+.btn.secondary {
+    border: solid 3px #C6403F;
+    color: #272A2F;
+}
+
+.fake-input {
+    padding: 18px 20px;
+    border-radius: 40px;
+    background-color: #C4CECF;
+}
+.fake-input p {
+    color: #272727;
+    font-size: bold;
+    pointer-events: none;
+}
+
+#password-forget-link{
+    font-weight: bold;
+}
