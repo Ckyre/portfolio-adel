@@ -11,14 +11,18 @@
 
     <body>
         <h1 id="hello-adel-txt">Re-bonjour, Adel</h1>
-        <a href="#" class="btn primary" id="first-connect-btn">se connecter</a>
+        <a href="#connexion" class="btn primary" id="first-connect-btn">se connecter</a>
 
         <form id="connect-form">
             <h3>Se connecter</h3>
-            <div class="fake-input"><p>@adelsanaa</p></div>
-            <div class="fake-input"><p id="mdp-content-txt">embauchez-moi</p></div>
+            <div class="fake-input"><p class="noselect">@adelsanaa</p></div>
+            <div class="fake-input flex-input">
+                <p class="noselect" id="mdp-content-txt">*************</p>
+                <img id="password-visibility-toggle" src="assets/images/icons/eyelashes.png" alt="Voir le mot de passe">
+            </div>
             <p id="password-forget-link">Mot de passe oublié ?</p>
-            <a href="#" class="btn secondary" id="connect-btn">se connecter</a>
+            <p class="hidden" id="password-forget-help">Adel, tu as encore oublié ton mot de passe ?<br>Rapelle-toi, ton mot de passe est ton rêve, en treize caractères.</p>
+            <a href="home.html" class="btn secondary" id="connect-btn">se connecter</a>
         </form>
     </body>
 
