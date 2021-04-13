@@ -1,0 +1,118 @@
+body {
+    background-color: #C4CECF;
+}
+h1 {
+    color: #272A2F;
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+/* Main container */
+.profil-main-container {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+/* Fil d'Ariane */
+.profil-main-container .fil-ariane{
+    margin-bottom: 8px;
+}
+.profil-main-container .fil-ariane, .profil-main-container .fil-ariane a {
+    color: #272A2F;
+}
+.profil-main-container .fil-ariane a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Thumbnail */
+.profil-main-container .thumbnail {
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    border-radius: 25px;
+    z-index: -100;
+}
+
+.profil-main-container .profil-container {
+    width: 55%;
+    margin: 150px auto 0 auto;
+}
+.profil-main-container .profil-container .flex {
+    align-items:flex-end;
+    justify-content: space-between;
+}
+
+.profil-main-container .profil-container .pp {
+    border-radius: 1000px;
+    width: 180px;
+    border: 3px solid #C4CECF;
+}
+.profil-main-container .profil-container .profil-informations {
+    margin-top: 25px;
+}
+.profil-main-container .profil-container .profil-informations h3 {
+    color: #C6403F;
+}
+.profil-main-container .profil-container .profil-informations p {
+    color: #272A2F;
+}
+.profil-main-container .profil-container .profil-informations p:not(.location) {
+    font-size: 1.2rem;
+}
+.profil-main-container .profil-container .profil-informations .flex {
+    justify-content: start;
+}
+.profil-main-container .profil-container .profil-informations .flex p:first-child {
+    margin-right: 15px;
+}
+
+/* Profile's comments */
+.profil-main-container .profil-container .profil-posts {
+    margin-top: 35px;
+}
+.profil-main-container .profil-container .profil-posts p {
+    color: #272A2F;
+}
+.profil-main-container .profil-container .profil-posts .title {
+    font-weight: bold;
+}
+.profil-main-container .profil-container .profil-posts .flex {
+    justify-content: start;
+    align-items:flex-start;
+}
+.profil-main-container .profil-container .profil-posts .pp {
+    width: 75px;
+}
+.profil-main-container .profil-container .profil-posts a {
+    color: #C6403F;
+}
+
+.profil-main-container .profil-container .profil-posts ul {
+    list-style: none;
+    margin-top: 30px;
+}
+.profil-main-container .profil-container .profil-posts ul li:not(:last-child) {
+    margin-right: 20px;
+}
+.profil-main-container .profil-container .profil-posts ul li img {
+    width: 15px;
+    margin-right: 5px;
+}
+.profil-main-container .profil-container .profil-posts ul li.active p {
+    color: #C6403F;
+}
+.profil-main-container .profil-container .profil-posts ul li.active img {
+    /*filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);*/
+}
+.profil-main-container .profil-container .profil-posts .btn-container {
+    text-align: center;    
+    margin: 50px auto 0 auto;
+}
+.profil-main-container .profil-container .profil-posts .btn-container a {
+    padding: 8px 25px;
+}

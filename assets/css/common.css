@@ -51,14 +51,15 @@ a {
     font-weight: bold;
 }
 
-.btn.primary {
-    background-color: #C6403F;
-    border: none;
-}
-
 .btn.secondary {
     border: solid 3px #C6403F;
     color: #272A2F;
+    transition: background-color 0.4s, color 0.4s;
+}
+.btn.secondary:hover {
+    background-color: #C6403F;
+    color: #C4CECF;
+    border: none;
 }
 
 .fake-input {
@@ -87,10 +88,14 @@ a {
 
 .custom-container {
     border-radius: 20px;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1), -5px -5px 8px rgba(242, 243, 243, 0.1);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1), -5px -5px 8px rgba(255, 255, 255, 0.1);
     padding: 30px 35px;
 }
 
 .flex {
     display: flex;
+}
+
+.flex.align-center {
+    align-items: center;
 }

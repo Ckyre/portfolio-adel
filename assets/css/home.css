@@ -5,6 +5,7 @@ body {
 h1 {
     color: #272A2F;
     font-weight: bold;
+    font-size: 3.5rem;
     text-align: center;
     margin-bottom: 5vh;
 }
@@ -14,8 +15,9 @@ h1 {
     height: 50vh;
     width: 85vw;
     margin: 0 auto;
-    grid-template-columns: 0.4fr 1fr 0.4fr;
+    grid-template-columns: 0.2fr 1fr 0.35fr;
     grid-template-rows: repeat(1, 1fr);
+    grid-gap: 50px;
 }
 
 .home-grid .pp {
@@ -31,7 +33,6 @@ h1 {
 }
 .profil-preview {
     position: relative;
-    margin: 0 100px 100px 100px;
     background-color: #C4CECF;
 }
 .profil-preview .thumbnail {
@@ -82,6 +83,9 @@ h1 {
     grid-row: 1 / 2;
     color: #272A2F;
 }
+.latest-posts .custom-container:not(:last-child) {
+    margin-bottom: 50px;
+}
 .latest-posts .pp {
     margin-right: 25px;
     width: 70px;
@@ -90,10 +94,87 @@ h1 {
 .latest-posts p {
     color: #272A2F;
 }
+.latest-posts .post-content {
+    margin-top: 20px;
+}
 .latest-posts a {
     color: #C6403F;
 }
+.latest-posts .post-content b {
+    font-weight: bold;
+}
+.latest-posts ul {
+    list-style: none;
+    margin-top: 30px;
+}
+.latest-posts ul li:not(:last-child) {
+    margin-right: 20px;
+}
+.latest-posts ul li img {
+    width: 15px;
+    margin-right: 5px;
+}
+.latest-posts ul li.active p {
+    color: #C6403F;
+}
+.latest-posts ul li.active img {
+    /*filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);*/
+}
 .latest-posts .btn-container {
+    text-align: center;    
+    margin: 50px auto 0 auto;
+}
+.latest-posts .btn-container a {
+    padding: 8px 25px;
+}
+.latest-posts .post-comments {
+    margin-top: 20px;
+    padding: 20px 5px 0 5px;
+    border-top: 2px solid #272A2F;
+}
+.latest-posts .post-comments .comment {
+    margin-top: 15px;
+}
+.latest-posts .post-comments .comment .pp {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+.latest-posts .post-comments .comment .comment .pp {
+    width: 30px;
+    height: 30px;
+}
+.latest-posts .post-comments .comment p:not(.comment-text) {
+    font-size: 0.8rem;
+}
+.latest-posts .post-comments .comment .comment-text {
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
+/* FAST NAVIGATION */
+.fast-nav-container{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.fast-nav-container .fast-nav{
+    text-align: center;
+}
+.fast-nav-container .fast-nav a, .fast-nav p {
     display: block;
-    margin: 100px auto 0 auto;
+    color: #272A2F;
+    margin: 15px 0;
+}
+.fast-nav-container .fast-nav p {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+.fast-nav-container .fast-nav a {
+    font-weight: bold;
+}
+.fast-nav-container .fast-nav a:last-child {
+    margin-bottom: 0;
+}
+.fast-nav-container .fast-nav a:hover {
+    text-decoration: underline;
+    color: #C6403F;
 }
